@@ -1,0 +1,93 @@
+[
+  {
+    "id": 13,
+    "title": "Develop API for New Feature",
+    "description": "Design and implement the backend API endpoints required for the upcoming user profile enhancement feature. This includes defining request/response schemas, handling data validation, and ensuring proper authentication and authorization mechanisms are in place. The API should be scalable and well-documented for frontend consumption.",
+    "priority": "High",
+    "isCompleted": false
+  },
+  {
+    "id": 12,
+    "title": "Conduct User Acceptance Testing (UAT)",
+    "description": "Plan and execute User Acceptance Testing for the recently developed notification system. Gather feedback from a select group of beta users, document any bugs or usability issues encountered, and create a report summarizing the UAT findings and recommendations for improvement before the official launch.",
+    "priority": "Medium",
+    "isCompleted": false
+  },
+  {
+    "id": 11,
+    "title": "Integrate Payment Gateway",
+    "description": "Integrate a new third-party payment gateway to support additional payment methods for our e-commerce platform. This involves setting up API connections, handling transaction processing, managing callbacks, and ensuring secure data handling according to PCI DSS standards. Thorough testing of various payment scenarios (successful, failed, refunded) is required.",
+    "priority": "High",
+    "isCompleted": true
+  },
+  {
+    "id": 10,
+    "title": "Improve Website Performance",
+    "description": "Identify and address performance bottlenecks on the main marketing website. Analyze page load times, optimize image sizes, implement lazy loading for assets, and minimize render-blocking resources to improve Core Web Vitals scores and overall user experience. This may involve frontend optimizations and potentially server-side configurations.",
+    "priority": "Medium",
+    "isCompleted": false
+  },
+  {
+    "id": 9,
+    "title": "Update Third-Party Libraries",
+    "description": "Review and update all critical third-party libraries and dependencies across the project to their latest stable versions. Check for security vulnerabilities in outdated packages and ensure compatibility with the current codebase. This task is essential for maintaining a secure and up-to-date development environment.",
+    "priority": "Low",
+    "isCompleted": false
+  },
+  {
+    "id": 8,
+    "title": "User Onboarding Flow Review",
+    "description": "Conduct a thorough review of the current user onboarding process. Identify drop-off points and areas of confusion. Propose design and content improvements to enhance user engagement and completion rates for new sign-ups.",
+    "priority": "Low",
+    "isCompleted": true
+  },
+  {
+    "id": 7,
+    "title": "Optimize Database Queries",
+    "description": "Analyze and optimize slow database queries identified in the performance monitoring logs. This involves indexing, rewriting queries, and potentially denormalizing some data structures to improve response times for critical operations.",
+    "priority": "Medium",
+    "isCompleted": false
+  },
+  {
+    "id": 6,
+    "title": "Implement New Dashboard Widget",
+    "description": "Develop and integrate a new interactive widget for the main dashboard. This widget should display real-time analytics data, allowing users to quickly grasp key performance indicators. Ensure the design is clean, responsive, and aligns with the existing UI/UX guidelines. Includes fetching data from the analytics API and handling loading/error states gracefully.",
+    "priority": "High",
+    "isCompleted": true
+  },
+  {
+    "id": 5,
+    "isCompleted": false,
+    "title": "Update README.md",
+    "description": "Add details about the recent feature implementation to the project documentation. This update is crucial for ensuring that all new contributors and team members have a clear and comprehensive understanding of the latest functionalities. We need to meticulously document the architecture, setup process, and usage guidelines for the new feature. This should include code snippets, configuration examples, and potential troubleshooting steps. The goal is to make the README as informative as possible, covering every aspect of the feature's integration and operation within the project ecosystem, ensuring long-term maintainability and ease of use for everyone involved in the project's lifecycle.",
+    "priority": "Low"
+  },
+  {
+    "id": 4,
+    "isCompleted": false,
+    "title": "Schedule Team Meeting",
+    "description": "Organize a retrospective meeting for the last sprint to discuss improvements. This meeting should provide a dedicated space for the team to reflect on what went well, what could have been better, and what actions can be taken to improve in the next sprint. We need to select a suitable time that works for everyone, prepare an agenda covering key discussion points, and ensure all team members are encouraged to participate openly and honestly. The outcome should be a clear set of actionable items to enhance our workflow, collaboration, and overall productivity moving forward.",
+    "priority": "Medium"
+  },
+  {
+    "id": 3,
+    "title": "Refactor User Authentication Module",
+    "description": " Improve code quality and performance of the auth module. Consider using JWT. This refactoring effort involves a deep dive into the existing authentication system to identify areas for optimization, enhance security protocols, and ensure scalability. We'll be looking to streamline the user login, registration, and session management processes. A key part of this will be the investigation and potential implementation of JSON Web Tokens (JWT) for more secure and efficient handling of user authentication across different services and applications, aiming for a robust and modern authentication architecture.",
+    "priority": "Medium",
+    "isCompleted": true
+  },
+  {
+    "id": 2,
+    "title": "Deploy Critical Update",
+    "description": "Roll out the latest security patch to all servers before end of day. This deployment is of the highest importance due to the critical nature of the security vulnerabilities addressed by this patch. It requires careful coordination across all server environments to ensure a seamless transition with minimal downtime. We must verify the successful application of the patch on each server and conduct post-deployment checks to confirm system integrity and security. This proactive measure is essential to protect our infrastructure and user data from potential threats.",
+    "priority": "High",
+    "isCompleted": false
+  },
+  {
+    "id": 1,
+    "title": "Fix Production Bug",
+    "description": "Address the critical login issue affecting users in the EU region. Requires immediate attention. This bug is causing significant disruption for our users in the European Union, preventing them from accessing their accounts. Our top priority is to diagnose the root cause of this issue swiftly and implement a reliable fix. Thorough testing of the solution in a staging environment is mandatory before deploying it to production. We need to monitor the situation closely after the fix is deployed to ensure the issue is fully resolved and no other problems have arisen.",
+    "priority": "High",
+    "isCompleted": false
+  }
+]

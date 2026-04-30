@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  /* background-image: url("/src/assets/Grid.jpg");
+   */
+  background-color: oklch(13% 0.028 261.692);
+}
+
+.sidebar-scrollable::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+.sidebar-scrollable::-webkit-scrollbar-track {
+  background: oklch(13% 0.028 261.692);
+}
+.sidebar-scrollable::-webkit-scrollbar-thumb {
+  background: oklch(27.8% 0.033 256.848);
+  border-radius: 20px;
+  border: 3px solid oklch(13% 0.028 261.692)
+}
+.sidebar-scrollable::-webkit-scrollbar-thumb:hover {
+  background: oklch(37.3% 0.034 259.733);
+}
+
+.sidebar-scrollable-light::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+.sidebar-scrollable-light::-webkit-scrollbar-track {
+  background: white;
+}
+.sidebar-scrollable-light::-webkit-scrollbar-thumb {
+  background: oklch(86.9% 0.022 252.894);
+  border-radius: 20px;
+  border: 3px solid white;
+}
+.sidebar-scrollable-light::-webkit-scrollbar-thumb:hover {
+  background: oklch(70.4% 0.04 256.788);
+}
+
