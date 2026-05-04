@@ -42,9 +42,9 @@ export default function EditTask() {
       <link rel="shortcut icon" href="Favicon.png" />
     </Helmet>
 
-    <div className="flex flex-col justify-start items-start h-full w-full gap-6 p-4 px-8 bg-white dark:bg-gray-950 font-Estedad">
+    {!isCompleted ? (<div className="flex flex-col justify-start items-start h-full w-full gap-6 p-4 px-8 bg-white dark:bg-gray-950 font-Estedad">
 
-      <div className="flex flex-col justify-start items-end gap-1 mt-16 border-b border-b-gray-800 w-full pb-6">
+      <div className="flex flex-col justify-start items-end gap-1 mt-3 border-b border-b-gray-800 w-full pb-6">
         <h2 className="text-lg font-semibold dark:text-white text-gray-950">ویرایش تسک</h2>
         <p className="text-md font-normal dark:text-gray-300 text-gray-700">.این اطلاعات بعد از ثبت فرم بروزرسانی خواهد شد</p>
       </div>
@@ -102,6 +102,6 @@ export default function EditTask() {
 
       </Form>
 
-    </div>
+    </div>) : <div className="text-4xl dark:text-white text-gray-950 w-full h-full flex items-center justify-center gap-2"><span className="font-bold">YES: </span>Editing is not allowed!</div>}
   </>);
 }

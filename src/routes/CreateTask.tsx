@@ -37,7 +37,7 @@ export default function CreateTask() {
 
     <div className="flex flex-col justify-start items-start h-full w-full gap-6 p-4 px-8 dark:bg-gray-950 bg-white font-Estedad">
 
-      <div className="flex flex-col justify-start items-end gap-1 mt-16 border-b border-b-gray-800 w-full pb-6 font-Estedad">
+      <div className="flex flex-col justify-start items-end gap-1 mt-3 border-b border-b-gray-800 w-full pb-6 font-Estedad">
         <h2 className="text-lg font-semibold dark:text-white text-gray-950">ساختن تسک</h2>
         <p className="text-md font-normal dark:text-gray-300 text-gray-700">.این اطلاعات در لیست نمایش داد خواهد شد</p>
       </div>
