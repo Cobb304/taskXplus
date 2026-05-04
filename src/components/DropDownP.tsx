@@ -36,8 +36,6 @@ export default function DropDownP({ onSelect, data, setData }: any): JSX.Element
       onSelect(pervVal);
       return pervVal;
     });
-
-    setIsOpen(false);
   }
 
   useEffect(() => {
