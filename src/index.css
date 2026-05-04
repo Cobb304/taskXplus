@@ -1,6 +1,17 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+@font-face {
+  font-family: "Estedad";
+  src: url("Estedad-FD[KSHD\,wght].woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@theme {
+  --font-Estedad: "Estedad";
+}
+
 body {
   /* background-image: url("/src/assets/Grid.jpg");
    */

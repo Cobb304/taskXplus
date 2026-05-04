@@ -9,7 +9,7 @@ export type Stat = {
 export type TaskObject = {
   id?: number;
   title: string;
-  description?: string;
+  description: string | null;
   isCompleted: boolean;
   priority: Priority;
 }
@@ -26,3 +26,23 @@ export interface TaskT {
 }
 
 export type Theme = "" | "dark";
+
+export type Filters = {
+  searchInput: string;
+  completion: boolean | null;
+  low: boolean;
+  medium: boolean;
+  high: boolean;
+}
+export type PrioritySelection = {
+  low: boolean;
+  medium: boolean;
+  high: boolean;
+}
+
+export type SearchProp = {
+  onClick(): void;
+  onClear(): void;
+  onChange(event: React.ChangeEvent<HTMLInputElement>): void;
+  inputValue: string;
+}

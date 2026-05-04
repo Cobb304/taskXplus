@@ -11,6 +11,7 @@ import TaskPage from "./routes/TaskPage.tsx";
 import EditTask from "./routes/EditTask.tsx";
 import NotFound from "./components/NotFound.tsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/", element: <RootLayout />, children: [
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")!).render(
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
 );

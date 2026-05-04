@@ -1,93 +1,107 @@
 [
   {
-    "id": 13,
-    "title": "Develop API for New Feature",
-    "description": "Design and implement the backend API endpoints required for the upcoming user profile enhancement feature. This includes defining request/response schemas, handling data validation, and ensuring proper authentication and authorization mechanisms are in place. The API should be scalable and well-documented for frontend consumption.",
-    "priority": "High",
-    "isCompleted": false
-  },
-  {
-    "id": 12,
-    "title": "Conduct User Acceptance Testing (UAT)",
-    "description": "Plan and execute User Acceptance Testing for the recently developed notification system. Gather feedback from a select group of beta users, document any bugs or usability issues encountered, and create a report summarizing the UAT findings and recommendations for improvement before the official launch.",
-    "priority": "Medium",
-    "isCompleted": false
-  },
-  {
-    "id": 11,
-    "title": "Integrate Payment Gateway",
-    "description": "Integrate a new third-party payment gateway to support additional payment methods for our e-commerce platform. This involves setting up API connections, handling transaction processing, managing callbacks, and ensuring secure data handling according to PCI DSS standards. Thorough testing of various payment scenarios (successful, failed, refunded) is required.",
-    "priority": "High",
-    "isCompleted": true
-  },
-  {
-    "id": 10,
-    "title": "Improve Website Performance",
-    "description": "Identify and address performance bottlenecks on the main marketing website. Analyze page load times, optimize image sizes, implement lazy loading for assets, and minimize render-blocking resources to improve Core Web Vitals scores and overall user experience. This may involve frontend optimizations and potentially server-side configurations.",
-    "priority": "Medium",
-    "isCompleted": false
-  },
-  {
-    "id": 9,
-    "title": "Update Third-Party Libraries",
-    "description": "Review and update all critical third-party libraries and dependencies across the project to their latest stable versions. Check for security vulnerabilities in outdated packages and ensure compatibility with the current codebase. This task is essential for maintaining a secure and up-to-date development environment.",
+    "id": 1,
+    "title": "رفع مشکل ورود",
+    "description": "رسیدگی فوری به مشکل بحرانی ورود کاربران در منطقه اتحادیه اروپا. این باگ باعث اختلال زیادی برای کاربران شده است.",
     "priority": "Low",
     "isCompleted": false
   },
   {
-    "id": 8,
-    "title": "User Onboarding Flow Review",
-    "description": "Conduct a thorough review of the current user onboarding process. Identify drop-off points and areas of confusion. Propose design and content improvements to enhance user engagement and completion rates for new sign-ups.",
-    "priority": "Low",
+    "id": 2,
+    "title": "استقرار به‌روزرسانی حیاتی",
+    "description": "اعمال آخرین وصله امنیتی بر روی تمام سرورها تا پایان روز. این استقرار برای حفاظت از زیرساخت‌ها و داده‌های کاربران ضروری است.",
+    "priority": "High",
     "isCompleted": true
   },
   {
-    "id": 7,
-    "title": "Optimize Database Queries",
-    "description": "Analyze and optimize slow database queries identified in the performance monitoring logs. This involves indexing, rewriting queries, and potentially denormalizing some data structures to improve response times for critical operations.",
+    "id": 3,
+    "title": "بازنویسی ماژول احراز هویت",
+    "description": "بهبود کیفیت کد و عملکرد ماژول احراز هویت. استفاده از JWT برای امنیت و کارایی بیشتر در نظر گرفته شود.",
     "priority": "Medium",
+    "isCompleted": true
+  },
+  {
+    "id": 4,
+    "title": "برنامه‌ریزی جلسه تیم",
+    "description": "سازماندهی جلسه بازنگری اسپرینت گذشته برای بحث در مورد بهبودها. انتخاب زمان مناسب و تهیه دستور جلسه ضروری است.",
+    "priority": "Medium",
+    "isCompleted": false
+  },
+  {
+    "id": 5,
+    "title": "به‌روزرسانی فایل README.md",
+    "description": "افزودن جزئیات پیاده‌سازی ویژگی جدید به مستندات پروژه. این کار برای راهنمایی مشارکت‌کنندگان جدید حیاتی است.",
+    "priority": "Low",
     "isCompleted": false
   },
   {
     "id": 6,
-    "title": "Implement New Dashboard Widget",
-    "description": "Develop and integrate a new interactive widget for the main dashboard. This widget should display real-time analytics data, allowing users to quickly grasp key performance indicators. Ensure the design is clean, responsive, and aligns with the existing UI/UX guidelines. Includes fetching data from the analytics API and handling loading/error states gracefully.",
+    "title": "پیاده‌سازی ویجت داشبورد جدید",
+    "description": "توسعه و ادغام ویجت تعاملی جدید برای داشبورد اصلی که داده‌های تحلیلی زنده را نمایش دهد. طراحی باید تمیز و واکنش‌گرا باشد.",
     "priority": "High",
-    "isCompleted": true
+    "isCompleted": false
   },
   {
-    "id": 5,
-    "isCompleted": false,
-    "title": "Update README.md",
-    "description": "Add details about the recent feature implementation to the project documentation. This update is crucial for ensuring that all new contributors and team members have a clear and comprehensive understanding of the latest functionalities. We need to meticulously document the architecture, setup process, and usage guidelines for the new feature. This should include code snippets, configuration examples, and potential troubleshooting steps. The goal is to make the README as informative as possible, covering every aspect of the feature's integration and operation within the project ecosystem, ensuring long-term maintainability and ease of use for everyone involved in the project's lifecycle.",
-    "priority": "Low"
-  },
-  {
-    "id": 4,
-    "isCompleted": false,
-    "title": "Schedule Team Meeting",
-    "description": "Organize a retrospective meeting for the last sprint to discuss improvements. This meeting should provide a dedicated space for the team to reflect on what went well, what could have been better, and what actions can be taken to improve in the next sprint. We need to select a suitable time that works for everyone, prepare an agenda covering key discussion points, and ensure all team members are encouraged to participate openly and honestly. The outcome should be a clear set of actionable items to enhance our workflow, collaboration, and overall productivity moving forward.",
-    "priority": "Medium"
-  },
-  {
-    "id": 3,
-    "title": "Refactor User Authentication Module",
-    "description": " Improve code quality and performance of the auth module. Consider using JWT. This refactoring effort involves a deep dive into the existing authentication system to identify areas for optimization, enhance security protocols, and ensure scalability. We'll be looking to streamline the user login, registration, and session management processes. A key part of this will be the investigation and potential implementation of JSON Web Tokens (JWT) for more secure and efficient handling of user authentication across different services and applications, aiming for a robust and modern authentication architecture.",
+    "id": 7,
+    "title": "بهینه‌سازی کوئری‌های پایگاه داده",
+    "description": "تحلیل و بهینه‌سازی کوئری‌های کند پایگاه داده شناسایی شده در گزارش‌های نظارت بر عملکرد.",
     "priority": "Medium",
     "isCompleted": true
   },
   {
-    "id": 2,
-    "title": "Deploy Critical Update",
-    "description": "Roll out the latest security patch to all servers before end of day. This deployment is of the highest importance due to the critical nature of the security vulnerabilities addressed by this patch. It requires careful coordination across all server environments to ensure a seamless transition with minimal downtime. We must verify the successful application of the patch on each server and conduct post-deployment checks to confirm system integrity and security. This proactive measure is essential to protect our infrastructure and user data from potential threats.",
+    "id": 8,
+    "title": "بررسی جریان معرفی کاربر",
+    "description": "بازبینی کامل فرآیند معرفی کاربران جدید. شناسایی نقاط ریزش و پیشنهاد بهبود برای افزایش نرخ تکمیل ثبت‌نام.",
+    "priority": "Low",
+    "isCompleted": false
+  },
+  {
+    "id": 9,
+    "title": "راه‌اندازی پایپ‌لاین CI/CD",
+    "description": "ایجاد پایپ‌لاین یکپارچه‌سازی و استقرار مداوم (CI/CD) برای پروژه جهت خودکارسازی فرآیندها.",
     "priority": "High",
     "isCompleted": false
   },
   {
-    "id": 1,
-    "title": "Fix Production Bug",
-    "description": "Address the critical login issue affecting users in the EU region. Requires immediate attention. This bug is causing significant disruption for our users in the European Union, preventing them from accessing their accounts. Our top priority is to diagnose the root cause of this issue swiftly and implement a reliable fix. Thorough testing of the solution in a staging environment is mandatory before deploying it to production. We need to monitor the situation closely after the fix is deployed to ensure the issue is fully resolved and no other problems have arisen.",
-    "priority": "High",
+    "id": 10,
+    "title": "تحقیق درباره فریم‌ورک فرانت‌اند جدید",
+    "description": "بررسی مزایا و معایب استفاده از یک فریم‌ورک جدید فرانت‌اند برای پروژه‌های آینده. ارائه گزارش تحلیل مقایسه‌ای.",
+    "priority": "Low",
+    "isCompleted": true
+  },
+  {
+    "id": 11,
+    "title": "طراحی رابط کاربری صفحه پروفایل",
+    "description": "طراحی رابط کاربری جدید و مدرن برای صفحه پروفایل کاربر، با تمرکز بر خوانایی و تجربه کاربری بهتر.",
+    "priority": "Medium",
     "isCompleted": false
+  },
+  {
+    "id": 12,
+    "title": "تست عملکرد برنامه موبایل",
+    "description": "انجام تست‌های جامع عملکردی بر روی اپلیکیشن موبایل در دستگاه‌های مختلف برای شناسایی و رفع گلوگاه‌ها.",
+    "priority": "High",
+    "isCompleted": true
+  },
+  {
+    "id": 13,
+    "title": "مستندسازی API داخلی",
+    "description": "ایجاد مستندات کامل برای API داخلی پروژه، شامل نقاط پایانی، پارامترها و پاسخ‌های نمونه.",
+    "priority": "Low",
+    "isCompleted": false
+  },
+  {
+    "id": 14,
+    "title": "به‌روزرسانی کتابخانه‌های پروژه",
+    "description": "بررسی و به‌روزرسانی تمام وابستگی‌های پروژه به آخرین نسخه‌های پایدار برای رفع مشکلات امنیتی و بهره‌مندی از ویژگی‌های جدید.",
+    "priority": "Medium",
+    "isCompleted": true
+  },
+  {
+    "id": 15,
+    "title": "بازبینی کد بخش گزارش‌گیری",
+    "description": "انجام بازبینی کد دقیق بر روی ماژول گزارش‌گیری برای اطمینان از صحت منطق، کارایی و رعایت استانداردهای کدنویسی.",
+    "priority": "Low",
+    "isCompleted": true
   }
 ]

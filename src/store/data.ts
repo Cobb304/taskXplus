@@ -10,7 +10,7 @@ const dataSlice = createSlice({
   initialState: initValues,
   reducers: {
     addTask(state: TaskObject[], actions: PayloadAction<{ title: string; description: string; priority: Priority }>) {
-      const newTaskObject = new Task(actions.payload.title, actions.payload.description, actions.payload.priority);
+      const newTaskObject = new Task(actions.payload.title, actions.payload.description, actions.payload.priority!);
       newTaskObject.addTaskLS();
       state.unshift(newTaskObject);
     },
@@ -35,6 +35,11 @@ const dataSlice = createSlice({
       state.length = 0;
       state.push(...updatedTasksArray!);
     },
+    deleteAllTasks(state: TaskObject[]) {
+      localStorage.setItem("tasks", "[]");
+      
+      state.length = 0;
+    }
   }
 });
 

@@ -7,9 +7,9 @@ export default function NoList() {
   const themeBoolean = useSelector((state: RootState) => state.theme);
 
   return (<>
-    <div className="flex flex-col justify-center items-center dark:bg-gray-950 bg-white w-full h-[20%] rounded-md border-dashed border-gray-700 border-2">
+    <div className="flex flex-col justify-center items-center dark:bg-gray-950 bg-white w-full h-[20%] rounded-md border-dashed border-gray-700 border-2 gap-2">
       <IoFileTrayFull color={themeBoolean ? "gray" : "black"} size={40} />
-      <h2 className="text-md font-medium dark:text-gray-400 text-gray-700">List of Tasks is empty.</h2>
+      <h2 className="text-md font-medium dark:text-gray-400 text-gray-700 font-Estedad">.لیست تسک ها خالی است</h2>
     </div>
   </>);
 }
