@@ -15,6 +15,11 @@ import { dataActions } from "../store/data.ts";
 import DropDown, { type DropDownItems } from "./DropDown.tsx";
 import { itemsActions } from "../store/items.ts";
 import DropDownP, { type priorityItem } from "./DropDownP.tsx";
+import { IoTrash } from "react-icons/io5";
+import { FaRandom } from "react-icons/fa";
+import { useNavigate } from "react-router";
+import randomTaskData from "../data/index.json";
+
 
 const dropDownItems: DropDownItems[] = [
   { id: 0, label: "بدون فیلتر", checked: true },
@@ -30,6 +35,7 @@ const pList: priorityItem[] = [
 
 export default function TaskSidebar() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const allTasks = useSelector((state: RootState) => state.data);
   const themeBoolean = useSelector((state: RootState) => state.theme);
   const items = useSelector((state: RootState) => state.items);
@@ -143,6 +149,16 @@ export default function TaskSidebar() {
     dispatch(itemsActions.getFilteredItems({ allTasks, filters: { searchInput: inputValue, completion: completionSelection, low: prioritySelection.low, medium: prioritySelection.medium, high: prioritySelection.high } }));
   }, [allTasks]);
 
+    function handleDeleteAllTasks() {
+      navigate("/");
+      dispatch(dataActions.deleteAllTasks());
+    }
+    function handleAddRandomTask() {
+      navigate("/");
+      const randomTasks: TaskObject[] = randomTaskData as TaskObject[];
+      dispatch(dataActions.sortTask(randomTasks));
+    }
+
   return (<>
     <div className="bg-white dark:bg-gray-950 w-full h-screen flex flex-col justify-between">
 
@@ -166,8 +182,19 @@ export default function TaskSidebar() {
         </button>
       </div>
 
-      <div className={`flex flex-col grow mt-2 mx-2 pb-2 items-center gap-2 h-screen overflow-y-auto ${themeBoolean ? "sidebar-scrollable" : "sidebar-scrollable-light"}`}>
+      <div className="flex flex-row dark:bg-gray-800 bg-gray-400 font-Estedad w-full justify-between px-2 py-2 dark:text-white text-gray-950 gap-2">
+        <div className="cursor-pointer w-[50%]" onClick={handleDeleteAllTasks}>
+          {/* <IoTrash onClick={handleDeleteAllTasks} color={themeBoolean ? "#030712" : "white"} size={18} /> */}
+          <p className="text-center px-2 dark:bg-gray-700 hover:dark:bg-gray-600 bg-gray-200 hover:bg-gray-300 rounded-md">حذف همه ی تسک ها</p>
+        </div>
 
+        <div className="cursor-pointer w-[50%]" onClick={handleAddRandomTask}>
+          {/* <FaRandom color={themeBoolean ? "#030712" : "white"} size={18} /> */}
+          <p className="text-center px-2 dark:bg-gray-700 hover:dark:bg-gray-600 bg-gray-200 hover:bg-gray-300 rounded-md">اضافه کردن 15 تسک به لیست</p>
+        </div>
+      </div>
+
+      <div className={`flex flex-col grow mt-2 mx-2 pb-2 items-center gap-2 h-screen overflow-y-auto ${themeBoolean ? "sidebar-scrollable" : "sidebar-scrollable-light"}`}>
         {Task.getTotalNumberOfTasksLS() === 0 && <NoList />}
 
         {prioritySelectionAfter.high && isDragAllowed && <div className="w-full font-Estedad dark:bg-red-950 bg-red-200 px-1 py-1 rounded-md">
